@@ -1,3 +1,7 @@
+# It has the same contents as .gitignore
+# It's a tip from prettier documentation. Tip! Base your .prettierignore on .gitignore and .eslintignore (if you have one).
+# https://prettier.io/docs/en/install.html
+
 # Logs
 logs
 *.log
