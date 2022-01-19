@@ -27,7 +27,7 @@ custom:
     packager: yarn
     bundle: true
     minify: true
-    sourcemap: false
+    sourcemap: true
     keepNames: true
 #    external:
 #      - lodash
