@@ -4,7 +4,7 @@ service: backend-service-template-typescript # ChangeIt
 plugins:
   - serverless-esbuild
   - serverless-iam-roles-per-function
-  - serverless-offline
+  - serverless-offline  # serverless-esbuild should preceed serverless-offline
 
 package:
   individually: true
