@@ -1,4 +1,4 @@
-service: backend-service-template-typescript # ChangeIt
+service: ${self:custom.package.name}
 #variablesResolutionMode: 20210326
 
 plugins:
