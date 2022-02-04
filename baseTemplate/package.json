@@ -1,5 +1,5 @@
 {
-  "name": "base-template",
+  "name": "backend-service-base-template-typescript",
   "version": "1.0.0",
   "description": "Serverless base template using esBuild & Typescript",
   "author": "Ganesh Adapa",
