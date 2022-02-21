@@ -1,0 +1,49 @@
+{
+  "name": "sls-templates",
+  "version": "1.0.0",
+  "description": "set of sls templates for ready made reference",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/succulentpup/sls-templates.git"
+  },
+  "keywords": [
+    "serverless",
+    "sls",
+    "nodejs",
+    "typescript",
+    "aws",
+    "lambdas",
+    "apis",
+    "managed",
+    "services"
+  ],
+  "author": "Ganesh Adapa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/succulentpup/sls-templates/issues"
+  },
+  "homepage": "https://github.com/succulentpup/sls-templates#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^16.2.1",
+    "@commitlint/config-conventional": "^16.2.1",
+    "husky": "^7.0.4"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "lint-staged": {
+    "*/**/*.{js,ts}": [
+      "npm run lint"
+    ],
+    "*/*/*.{js,ts}": [
+      "npm run lint"
+    ]
+  }
+}
