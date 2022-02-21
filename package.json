@@ -26,24 +26,5 @@
   "bugs": {
     "url": "https://github.com/succulentpup/sls-templates/issues"
   },
-  "homepage": "https://github.com/succulentpup/sls-templates#readme",
-  "devDependencies": {
-    "@commitlint/cli": "^16.2.1",
-    "@commitlint/config-conventional": "^16.2.1",
-    "husky": "^7.0.4"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
-  },
-  "lint": {
-    "*/**/*.{js,ts}": [
-      "cd ./baseTemplate && yarn all-static-checks"
-    ],
-    "*/*/*.{js,ts}": [
-      "cd ./baseTemplate && yarn all-static-checks"
-    ]
-  }
+  "homepage": "https://github.com/succulentpup/sls-templates#readme"
 }
