@@ -1,5 +1,4 @@
 service: ${self:custom.package.name}
-#variablesResolutionMode: 20210326
 
 plugins:
   - serverless-esbuild
@@ -15,7 +14,6 @@ provider:
   versionFunctions: false
   region: ${opt:region, 'eu-west-2'} # ChangeIt
   stage: ${opt:stage, 'dev'}
-  lambdaHashingVersion: ${opt:lambdaHashingVersion, '20201221'}
   environment:
     AWS_NODEJS_CONNECTION_REUSE_ENABLED: 1 # useful for performance optimization, ref: http keep alive
 
