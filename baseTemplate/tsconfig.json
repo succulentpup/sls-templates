@@ -1,8 +1,9 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
+    "module": "es2015",
     "target": "ES2018",
     "sourceMap": true,
+    "moduleResolution": "Node",
     "esModuleInterop": true,
     "declaration": true,
     "strict": true,
