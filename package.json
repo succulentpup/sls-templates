@@ -34,16 +34,16 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged",
+      "pre-commit": "lint",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
-  "lint-staged": {
+  "lint": {
     "*/**/*.{js,ts}": [
-      "npm run lint"
+      "cd ./baseTemplate && yarn all-static-checks"
     ],
     "*/*/*.{js,ts}": [
-      "npm run lint"
+      "cd ./baseTemplate && yarn all-static-checks"
     ]
   }
 }
